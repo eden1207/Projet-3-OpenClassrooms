@@ -1,0 +1,200 @@
+.translation1 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation2 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation3 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation4 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation5 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation6 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation7 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation8 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation9 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation10 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation11 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 2200ms;
+          animation-delay: 2200ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation12 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation13 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 2600ms;
+          animation-delay: 2600ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation14 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 2800ms;
+          animation-delay: 2800ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation15 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation16 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation17 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 3400ms;
+          animation-delay: 3400ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation18 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 3600ms;
+          animation-delay: 3600ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.translation19 {
+  -webkit-animation: translation 500ms linear;
+          animation: translation 500ms linear;
+  -webkit-animation-delay: 3800ms;
+          animation-delay: 3800ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes translation {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes translation {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=translations_menu2.css.map */
