@@ -1,0 +1,1216 @@
+@charset "UTF-8";
+@media all and (min-width: 992px) {
+  /* ---- Propriétés Générales ---- */
+  /*-- Les variables --*/
+  /*-- Les mixins --*/
+  /*-- Introduction du loader --*/
+  /*--- Animation du chargement ----*/
+  /*-- Les variables --*/
+  /*-- Les mixins --*/
+  /*-- Cadre d'ensemble logo + loader --*/
+  .acceuil {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 200px;
+    row-gap: 30px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    position: absolute; /* Pour que le loader se mette par dessus le menu d'accueil */
+    -webkit-animation: opacite 3000ms linear;
+            animation: opacite 3000ms linear;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  /*-- Disparition du loader en fondu --*/
+  /*.page{
+      animation: opacite 3000ms linear;
+      animation-fill-mode: forwards;
+
+      @keyframes opacite{
+          0%{
+              opacity: 1;
+          }
+
+          95%{
+              opacity: 1;
+          }
+
+          100%{
+              opacity: 0;
+          }
+      }
+  }*/
+  /*-- Cadre du loader --*/
+  .trajectoire {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+  }
+  /*-- Déclaration des ronds du loader --*/
+  .rond0 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 0ms;
+            animation-delay: 0ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond1 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 100ms;
+            animation-delay: 100ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond2 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond3 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond4 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond5 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond6 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond7 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 700ms;
+            animation-delay: 700ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond8 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 800ms;
+            animation-delay: 800ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond9 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond10 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1000ms;
+            animation-delay: 1000ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond11 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1100ms;
+            animation-delay: 1100ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond12 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond13 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1300ms;
+            animation-delay: 1300ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond14 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1400ms;
+            animation-delay: 1400ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond15 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1500ms;
+            animation-delay: 1500ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond16 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1600ms;
+            animation-delay: 1600ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond17 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1700ms;
+            animation-delay: 1700ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond18 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1800ms;
+            animation-delay: 1800ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .rond19 {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px black solid;
+    background-color: black;
+    -webkit-animation: circulaire 2000ms linear infinite;
+            animation: circulaire 2000ms linear infinite;
+    -webkit-animation-delay: 1900ms;
+            animation-delay: 1900ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  /*-- Déclaration du keyframe pour la rotation/translation/variation de taille de ronds --*/
+  @-webkit-keyframes circulaire {
+    0% {
+      transform: rotate(0deg) translateX(-50px) scale(0);
+    }
+    10% {
+      transform: rotate(36deg) translateX(-50px) scale(0.2);
+    }
+    20% {
+      transform: rotate(72deg) translateX(-50px) scale(0.4);
+    }
+    30% {
+      transform: rotate(108deg) translateX(-50px) scale(0.6);
+    }
+    40% {
+      transform: rotate(144deg) translateX(-50px) scale(0.8);
+    }
+    50% {
+      transform: rotate(180deg) translateX(-50px) scale(1);
+    }
+    60% {
+      transform: rotate(216deg) translateX(-50px) scale(0.8);
+    }
+    70% {
+      transform: rotate(252deg) translateX(-50px) scale(0.6);
+    }
+    80% {
+      transform: rotate(288deg) translateX(-50px) scale(0.4);
+    }
+    90% {
+      transform: rotate(324deg) translateX(-50px) scale(0.2);
+    }
+    100% {
+      transform: rotate(360deg) translateX(-50px) scale(0);
+    }
+  }
+  @keyframes circulaire {
+    0% {
+      transform: rotate(0deg) translateX(-50px) scale(0);
+    }
+    10% {
+      transform: rotate(36deg) translateX(-50px) scale(0.2);
+    }
+    20% {
+      transform: rotate(72deg) translateX(-50px) scale(0.4);
+    }
+    30% {
+      transform: rotate(108deg) translateX(-50px) scale(0.6);
+    }
+    40% {
+      transform: rotate(144deg) translateX(-50px) scale(0.8);
+    }
+    50% {
+      transform: rotate(180deg) translateX(-50px) scale(1);
+    }
+    60% {
+      transform: rotate(216deg) translateX(-50px) scale(0.8);
+    }
+    70% {
+      transform: rotate(252deg) translateX(-50px) scale(0.6);
+    }
+    80% {
+      transform: rotate(288deg) translateX(-50px) scale(0.4);
+    }
+    90% {
+      transform: rotate(324deg) translateX(-50px) scale(0.2);
+    }
+    100% {
+      transform: rotate(360deg) translateX(-50px) scale(0);
+    }
+  }
+  @-webkit-keyframes opacite {
+    0% {
+      position: absolute;
+      z-index: 3;
+      opacity: 1;
+    }
+    95% {
+      position: absolute;
+      z-index: 3;
+      opacity: 1;
+    }
+    100% {
+      position: absolute;
+      z-index: 3;
+      opacity: 0;
+    }
+  }
+  @keyframes opacite {
+    0% {
+      position: absolute;
+      z-index: 3;
+      opacity: 1;
+    }
+    95% {
+      position: absolute;
+      z-index: 3;
+      opacity: 1;
+    }
+    100% {
+      position: absolute;
+      z-index: 3;
+      opacity: 0;
+    }
+  }
+  .page {
+    -webkit-animation: opacite 3000ms linear;
+            animation: opacite 3000ms linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @keyframes opacite {
+    0% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  /*-- La syntaxe --*/
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .translation1 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 3200ms;
+            animation-delay: 3200ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation2 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 3400ms;
+            animation-delay: 3400ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation3 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 3600ms;
+            animation-delay: 3600ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation4 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 3800ms;
+            animation-delay: 3800ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation5 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 4000ms;
+            animation-delay: 4000ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation6 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 4200ms;
+            animation-delay: 4200ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation7 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 4400ms;
+            animation-delay: 4400ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation8 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 4600ms;
+            animation-delay: 4600ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation9 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 4800ms;
+            animation-delay: 4800ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation10 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 5000ms;
+            animation-delay: 5000ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation11 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 5200ms;
+            animation-delay: 5200ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation12 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 5400ms;
+            animation-delay: 5400ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation13 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 5600ms;
+            animation-delay: 5600ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation14 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 5800ms;
+            animation-delay: 5800ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation15 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 6000ms;
+            animation-delay: 6000ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation16 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 6200ms;
+            animation-delay: 6200ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  .translation17 {
+    -webkit-animation: translation 500ms linear;
+            animation: translation 500ms linear;
+    -webkit-animation-delay: 6400ms;
+            animation-delay: 6400ms;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  @-webkit-keyframes translation {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes translation {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  /* ---- Mise en forme de la première partie ---- */
+  /*-- Organisation de l'ensemble logo/balise de recherche --*/
+  .en-tete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4px;
+  }
+  .en-tete_dimensions {
+    width: 100%;
+    height: 110px;
+  }
+  /*-- Gestion du logo Ohmyfood --*/
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .logo_dimensions {
+    width: 100%;
+    height: 35px;
+  }
+  .logo_marges {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  /*-- Gestion de la balise de recherche de lieu --*/
+  .lieu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 18px;
+         column-gap: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3%;
+    padding-right: 0px;
+  }
+  .lieu_dimensions {
+    width: 100%;
+    height: 50px;
+  }
+  .lieu_contour {
+    box-shadow: 0px 3px 3px #d0d0d0 inset;
+  }
+  .lieu_fond {
+    background-color: #e9e9e9;
+  }
+  .lieu_lettre {
+    color: #373737;
+    background-color: #e9e9e9;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .lieu_symbole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9e9;
+    color: #373737;
+    font-size: 20px;
+  }
+  /* ---- Mise en forme de la deuxième partie ---- */
+  /*-- Les titres --*/
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduction_dimensions {
+    width: 100%;
+    height: 320px;
+  }
+  .introduction_marges {
+    padding-top: 5px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .introduction_aspect {
+    background-color: #f6f6f6;
+    row-gap: 20px;
+  }
+  .introduction-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduction-titre_dimensions {
+    width: 90%;
+    height: 80px;
+  }
+  .introduction-titre_aspect {
+    background-color: #f6f6f6;
+    text-align: center;
+  }
+  .introduction-sous-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduction-sous-titre_dimensions {
+    width: 100%;
+    height: 50px;
+  }
+  .introduction-sous-titre_aspect {
+    background-color: #f6f6f6;
+    text-align: center;
+  }
+  /*-- La balise de recherche --*/
+  .Exploration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Exploration_dimensions {
+    width: 20%;
+    height: 50px;
+  }
+  .Exploration_marges {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .Exploration_aspect {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 100px;
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    box-shadow: 0px 5px 10px #b6b6b6;
+    cursor: pointer;
+  }
+  .Exploration:hover > .bouton-animation {
+    opacity: 1;
+  }
+  .bouton-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 550ms; /* durée de l'aller et du retour de la translation de la banderole */
+  }
+  .bouton-animation_dimensions {
+    width: 20%;
+    height: 50px;
+  }
+  .bouton-animation_aspect {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 100px;
+    box-shadow: 0px 5px 10px #b6b6b6;
+    filter: brightness(110%);
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    opacity: 0;
+  }
+  /*-- Les filtres --*/
+  .Fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .Fonctionnement_dimensions {
+    width: 100%;
+    height: 530px;
+  }
+  .Fonctionnement_marges {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    padding-right: 0px;
+  }
+  .Fonctionnement-titre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Fonctionnement-titre_dimensions {
+    width: 95%;
+    height: 80px;
+  }
+  .Fonctionnement-titre_marges {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .Balises-contour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .Balises-contour_dimensions {
+    width: 95%;
+    height: 115px;
+  }
+  .Balises-contour:hover .balise-animation1 {
+    opacity: 1;
+  }
+  .Balises-contour:hover .balise-animation2 {
+    opacity: 0;
+  }
+  .Balises-contour:hover .balise-animation-teinte {
+    opacity: 0.05;
+  }
+  .Balises {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .Balises_dimensions {
+    width: 25%;
+    height: 80px;
+  }
+  .Balises_marges {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1%;
+    margin-right: 2%;
+  }
+  .Balises_aspect {
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 5px 10px #e9e9e9;
+  }
+  .balise-animation-teinte {
+    position: absolute;
+    z-index: 2;
+    transition: all 100ms;
+  }
+  .balise-animation-teinte_dimensions {
+    width: 100%;
+    height: 80px;
+  }
+  .balise-animation-teinte_aspect {
+    border-radius: 20px;
+    background-color: #ff79da;
+    opacity: 0;
+  }
+  .Balises-numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+  }
+  .Balises-numero_dimensions {
+    width: 30px;
+    height: 30px;
+  }
+  .Balises-numero_aspect {
+    border-radius: 50%;
+    background-color: #9356dc;
+    color: white;
+  }
+  .Balises-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Balises-logo_dimensions {
+    width: 50px;
+    height: 50px;
+  }
+  .Balises-logo_marges {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+  .balise-animation1 {
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+    color: #9356dc;
+    opacity: 0;
+    transition: all 100ms;
+  }
+  .balise-animation2 {
+    position: absolute;
+    z-index: 1;
+    font-size: 18px;
+    color: #838383;
+    opacity: 1;
+    transition: all 100ms;
+  }
+  .Balises-texte {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Balises-texte_dimensions {
+    width: 85%;
+    height: 50px;
+  }
+  /* ---- Troisième partie avec le corps de la page avec les balises "menu" ---- */
+  /*-- Flexbox parent contenant l'ensemble des cartes --*/
+  .Restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .Restaurants_dimensions {
+    width: 100%;
+    height: 1400px;
+  }
+  .Restaurants_marges {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 5px;
+  }
+  .Restaurants_aspect {
+    background-color: #f6f6f6;
+  }
+  /*-- Flexbox enfant contenant chacun deux cartes "Menu" --*/
+  .Restaurants-portion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Restaurants-portion_dimensions {
+    width: 92%;
+    height: 620px;
+  }
+  /*-- Gestion d'une carte "Menu" --*/
+  /*On utilise les propriétés absolues et relatives pour incruster "Nouveau" dans les photos*/
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+  }
+  .image-absolue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+  }
+  .image-absolue_dimensions {
+    width: 10%;
+    height: 40px;
+  }
+  .image-absolue_marges {
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: 20%;
+    margin-right: 0px;
+  }
+  .image-absolue_aspect {
+    color: #278870;
+    background-color: #99e2d0;
+    box-shadow: 0px 5px 10px black;
+  }
+  .image-relative {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  .card-image--zoom {
+    width: 500px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* On remplit le cadre défini après */
+  }
+  .card-image--crop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .card-image--crop_dimensions {
+    width: 100%;
+    height: 210px;
+  }
+  .card-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-article_dimensions {
+    min-width: 200px;
+    width: 100%;
+    height: 85px;
+  }
+  .card-article-texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .card-article-texte_dimensions {
+    width: 200px;
+    height: 75px;
+  }
+  .card-article-texte_marges {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  .card-bordure-texte {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .card-bordure-texte_dimensions {
+    width: 200px;
+    height: 20px;
+  }
+  .card-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-logo_dimensions {
+    width: 55px;
+    height: 55px;
+  }
+  .card-logo_aspect {
+    font-size: 24px;
+    font-style: normal;
+    color: black;
+  }
+  .animation-coeur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .animation-coeur:hover > .coeur1 {
+    opacity: 1;
+  }
+  .animation-coeur:hover > .coeur2 {
+    opacity: 0;
+  }
+  .coeur1 {
+    position: absolute;
+    z-index: 2;
+    font-size: 24px;
+    background: linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+            background-clip: text; /* Couleur du texte, ici le logo */
+    color: transparent; /* le texte, ici le logo, n'est plus noir mais transparent pour laisser place à l'autre couleur */
+    opacity: 0;
+    transition: all 550ms;
+  }
+  .coeur2 {
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    color: black;
+    opacity: 1;
+    transition: all 550ms;
+  }
+  /* Apparence au survol du bloque */
+  a[title*=lien-menu] {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    overflow: hidden;
+    /* Enlève ce qui dépasse du texte */
+  }
+  a[title*=lien-menu_dimensions] {
+    min-width: 180px;
+    max-width: 470px;
+    width: 100%;
+    height: 300px;
+  }
+  a[title*=lien-menu_contour] {
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #e9e9e9;
+  }
+  a[title*=lien-menu]:hover {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    overflow: hidden;
+    /* Enlève ce qui dépasse du texte */
+  }
+  a[title*=lien-menu_dimensions]:hover {
+    min-width: 180px;
+    max-width: 470px;
+    width: 100%;
+    height: 300px;
+  }
+  a[title*=lien-menu_contour]:hover {
+    border-radius: 20px;
+  }
+  /* ---- Quatrième partie avec le pied de page ---- */
+  .pied-de-page {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .pied-de-page_dimensions {
+    width: 100%;
+    height: 250px;
+  }
+  .pied-de-page_marges {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+  .pied-de-page_aspect {
+    background-color: #2a2a2a;
+  }
+  .Couleur-logo {
+    filter: invert(100%);
+  }
+  .pied-de-page-symbole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pied-de-page-symbole_dimensions {
+    width: 25px;
+    height: 25px;
+  }
+  .pied-de-page-texte {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .pied-de-page-texte_dimensions {
+    width: 100%;
+    height: 30px;
+  }
+  .pied-de-page-texte_aspect {
+    color: white;
+  }
+  a[title*=contact] {
+    color: white;
+    text-decoration: none;
+  }
+  a[title*=contact]:hover {
+    color: white;
+    text-decoration: none;
+  }
+}/*# sourceMappingURL=style_accueil_deskop.css.map */
